@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     private EditFragment editFragment;
     private ViewFragment viewFragment;
@@ -43,15 +43,14 @@ public class MainActivity extends AppCompatActivity {
             FragmentTransaction fragmentTransaction = manager.beginTransaction();
             view.setArguments(bundle);
             fragmentTransaction.replace(R.id.view_fragment, viewFragment).addToBackStack(null).commit();
-
         }
 
     }
 
-    public void Message(String msg) {
+/*    public void Message(String msg) {
         temp = msg;
         //Toast.makeText(MainActivity.this, "확인"+ temp, Toast.LENGTH_SHORT).show();
-    }
+    }*/
 
 /*    public void Message(String msg) {
         TempDTO dto = new TempDTO();
