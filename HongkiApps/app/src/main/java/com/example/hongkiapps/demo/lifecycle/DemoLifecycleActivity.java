@@ -1,10 +1,12 @@
-package com.example.hongkiapps;
+package com.example.hongkiapps.demo.lifecycle;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.hongkiapps.R;
 
 public class DemoLifecycleActivity extends AppCompatActivity {
     private static final String TAG = DemoLifecycleActivity.class.getSimpleName();

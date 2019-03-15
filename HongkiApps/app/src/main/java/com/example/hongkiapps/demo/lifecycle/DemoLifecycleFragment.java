@@ -1,4 +1,4 @@
-package com.example.hongkiapps;
+package com.example.hongkiapps.demo.lifecycle;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,13 +11,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class DemoLifeCycleFragment extends Fragment {
-    private static final String TAG = DemoLifeCycleFragment.class.getSimpleName();
+import com.example.hongkiapps.R;
+
+public class DemoLifecycleFragment extends Fragment {
+    private static final String TAG = DemoLifecycleFragment.class.getSimpleName();
 
     private StringBuilder mLogBuilder;
     private ViewHolder mViewHolder;
 
-    public DemoLifeCycleFragment() {
+    public DemoLifecycleFragment() {
         super();
         this.mLogBuilder = new StringBuilder();
     }

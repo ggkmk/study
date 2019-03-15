@@ -3,26 +3,29 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activityDemoLifecycle_rootPane"
+    android:id="@+id/activityDemoCommunicate_rootPane"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ScrollView
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOP PANEL" />
+
+    <FrameLayout
+        android:id="@+id/activityDemoCommunicate_topPane"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1" />
 
-        <TextView
-            android:id="@+id/activityDemoLifecycle_logTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOTTOM PANEL" />
 
-    </ScrollView>
-
-    <fragment
-        android:id="@+id/activityDemoLifecycle_fragment"
-        android:name="com.example.hongkiapps.demo.lifecycle.DemoLifecycleFragment"
+    <FrameLayout
+        android:id="@+id/activityDemoCommunicate_bottomPane"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
