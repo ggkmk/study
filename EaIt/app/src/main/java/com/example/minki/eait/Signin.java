@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.minki.eait.Common.Common;
+import com.example.minki.eait.Common.User_Number;
 import com.example.minki.eait.DTO.UserDTO;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -61,6 +62,7 @@ public class Signin extends AppCompatActivity {
                                 //Toast.makeText(Signin.this, "Sign in seuccessfully", Toast.LENGTH_SHORT).show();
                                 Intent homeIntent = new Intent(Signin.this,Home.class);
                                 Common.currentUsers = user;
+                                User_Number.User_Number = edtPhone.getText().toString();
                                 startActivity(homeIntent);
                                 finish();
                             } else {

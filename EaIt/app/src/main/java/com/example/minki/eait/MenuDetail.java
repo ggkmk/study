@@ -76,15 +76,25 @@ public class MenuDetail extends AppCompatActivity {
         food_price.setText(price);
         food_description.setText(description);
 
+        //Log.d("getNumber 확인", count);
+        //Toast.makeText(MenuDetail.this, "수량" + count,Toast.LENGTH_LONG).show();
+
         btnCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MenuDetail.this, Cart.class);
-                intent.putExtra("name", name);
-                intent.putExtra("price", price);
-                intent.putExtra("count", count);
-                startActivity(intent);
+                if (count == null)
+                {
+                    Toast.makeText(MenuDetail.this, "0개는 담을 수 없습니다",Toast.LENGTH_LONG).show();
+
+                } else  {
+
+                    Intent intent = new Intent(MenuDetail.this, Cart.class);
+                    intent.putExtra("name", name);
+                    intent.putExtra("price", price);
+                    intent.putExtra("count", count);
+                    startActivity(intent);
+                }
             }
         });
 

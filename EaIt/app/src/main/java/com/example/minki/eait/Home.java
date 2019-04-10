@@ -23,7 +23,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.minki.eait.Common.Cart;
 import com.example.minki.eait.Common.Common;
+import com.example.minki.eait.DTO.CartDTO;
 import com.example.minki.eait.DTO.Category;
 import com.example.minki.eait.DTO.UserDTO;
 import com.google.firebase.database.DataSnapshot;
@@ -49,6 +51,7 @@ public class Home extends AppCompatActivity
     private ArrayList<Category> mArrayList;
     private Menu_Adapter adapter;
     private Category dto;
+    private ArrayList<CartDTO> add_orderList;
 
     String menu_SetName;
     String menu_SetImage;
@@ -61,6 +64,8 @@ public class Home extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        //Log.d("추가주문 확인", ""+Cart.cart.get(0).getCart_Name());
+        //Toast.makeText(Home.this, " "+Cart.cart.get(0).getCart_Name(),Toast.LENGTH_LONG).show();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Menu");
