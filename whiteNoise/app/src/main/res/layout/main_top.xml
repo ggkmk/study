@@ -38,8 +38,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/main_top_textview_bg"
-            >
+            android:background="@drawable/main_top_textview_bg">
 
             <TextView
                 android:id="@+id/top_banner_text"

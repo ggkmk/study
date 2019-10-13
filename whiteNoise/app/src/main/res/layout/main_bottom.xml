@@ -12,7 +12,7 @@
         android:id="@+id/bottom_status_image"
         android:layout_width="50dp"
         android:layout_height="0dp"
-        android:background="@drawable/exchange"
+        android:background="@drawable/sample_album_img"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintLeft_toLeftOf="parent"
